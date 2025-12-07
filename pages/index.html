@@ -1,14 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="min-h-screen">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call_made" />
     <link href="../src/output.css" rel="stylesheet">
     <title>Home</title>
 </head>
-<body>
-    <header></header>
-    <main></main>
+<body class="min-h-screen">
+    <header>
+        <section class="flex items-center bg-red-100 justify-between py-4 px-3 ">
+            <div class="flex items-center justify-start gap-4">
+                <div class="flex items-center gap-1"><i class="fa-solid text-[1.8rem] fa-envelope "></i> <p>support@agritech.com</p></div>
+                <div class="flex items-center gap-1"><i class="fa-solid text-[1.8rem] fa-phone"></i> <p>(00227) 99 98 97 96</p></div>
+            </div>
+            <div class="flex items-center justify-center"><img src="../Agritech_App_Ressources/favico.png" alt="logo" class="size-15"> <h1>Agritech App</h1></div>
+            <div class="flex items-center justify-center gap-2">
+                <div class="flex items-center border-r pr-2 gap-1"><img src="../Agritech_App_Ressources/Niger.png" alt="Drapeau Niger" class="h-10 w-12"><p>NE</p></div>
+                <div class="flex items-center justify-center gap-2"><i class="fa-brands text-[1.8rem] fa-x-twitter"></i><i class="fa-brands text-[1.8rem] fa-facebook"></i><i class="fa-brands text-[1.8rem] fa-linkedin"></i><i class="fa-brands text-[1.8rem] fa-instagram"></i><i class="fa-brands text-[1.8rem] fa-tiktok"></i></div>
+            </div>
+        </section>
+        <nav class=" flex items-center justify-between px-7 pt-5 pb-2">
+            <form action="#" class="flex flex-row-reverse items-center justify-end max-w-80 w-full">
+                <input type="text" name="" id="searchNav" class="border border-gray-200 p-2 rounded-r-md w-full" placeholder="Search anything ...">
+                <button type="submit" class="border border-gray-200 bg-gray-200 py-2 px-3 rounded-l-md"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <ul class="flex items-center gap-3">
+                <li class="flex gap-0.5"><a href="#">Home</a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#282A35"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg></li>
+                <li class="flex gap-0.5"><a href="./pages/formations.html">Formations</a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#282A35"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg></li>
+                <li class="flex gap-0.5"><a href="#">Météo</a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#282A35"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg></li>
+                <li class="flex gap-0.5"><a href="#">Indicateurs</a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#282A35"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg></li>
+            </ul>
+            <a href="./pages/connexion.html" class="bg-green-950 text-white flex items-center justify-center py-3 px-8 rounded-3xl gap-1">Connect<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z"/></svg></a>
+        </nav>
+    </header>
+    <main>
+        
+    </main>
     <footer></footer>
 </body>
 </html>
