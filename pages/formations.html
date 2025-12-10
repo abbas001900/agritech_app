@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="min-h-screen" lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     <link href="../src/output.css" rel="stylesheet">
     <title>Formations</title>
 </head>
-<body>
+<body class="relative min-h-screen">
     <!-- IMPORTANT : La checkbox doit être AVANT tous les éléments qu'elle contrôle -->
     <input type="checkbox" id="menu" class="peer hidden">
 
@@ -97,7 +97,7 @@
     </aside>
 
     <!-- Header -->
-    <header class="fixed w-full z-30 md:static bg-white">
+    <header class="fixed top-0 w-full z-30 md:static bg-white">
         <section class="flex items-center bg-gray-200 md:bg-red-50 justify-between py-4 px-3"> 
             <div class="flex items-center justify-start gap-4 max-lg:hidden">
                 <div class="flex items-center gap-1">
@@ -181,17 +181,284 @@
     </header>
 
     <!-- debut du main -->
-    <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3justify-center min-h-screen mx-24 my-8">
-        <section class="col-span-full grid grid-cols-1 rounded-lg overflow-hidden h-fit">
-            <img src="../Agritech_App_Ressources/Home.jpg" alt="verdure" class="h-full w-full max-h-64 object-cover">
-            <div></div>
-        </section>
-        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center">
-            <h1 class="text-4xl col-span-full">Toutes Nos Formations</h1>
-            <div class="col-span-1 text-center">
+    <main class="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:grid-cols-3 justify-center min-h-screen mx-10 xl:mx-24 my-8 pt-22 lg:pt-0">
 
+        <!-- Image de bienvenue -->
+        <section class="col-span-full grid grid-cols-1 rounded-lg overflow-hidden h-fit relative">
+            <div class="absolute inset-0 bg-green-100/20 col-start-1 row-start-1"></div>
+            <img src="../Agritech_App_Ressources/Home.jpg" alt="verdure" class="h-full w-full max-h-64 object-cover col-start-1 row-start-1">
+            <div class="col-start-1 row-start-1 flex flex-col justify-center items-center gap-3 text-white">
+                <p>Home >> Nos formations</p>
+                <h1 class="text-2xl font-bold">Nos formations</h1>
+            </div>
+        </section>
+
+        <!-- section des offres de formation -->
+        <section class="grid grid-cols-1 col-span-full sm:grid-cols-2 lg:grid-cols-3 justify-center gap-8">
+            <h1 class="text-4xl col-span-full">Toutes Nos Formations</h1>
+
+            <!-- Debut card de formation -->
+            <div class="col-span-1 text-center flex flex-col items-center justify-center gap-3">
+                <div class="relative">
+                    <img src="../Agritech_App_Ressources/Blog-img-1.jpg" alt="Image agriculteur" class="object-cover h-70 w-full rounded-t-lg">
+                    <div class="absolute bottom-0 left-4 bg-amber-300 p-4 rounded-full transform translate-y-10">
+                        <p class="text-4xl text-gray-600 text-center">10</p>
+                        <p class="text-gray-600">08/2020</p>
+                    </div>
+                </div>
+                <p class="font-bold text-green-900">Jardinnage</p>
+                <h2 class="font-medium text-2xl">Lorem dolor</h2>
+                <p class="text-gray-600">Malika Malikatou</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor neque, modi cum libero magni reprehenderit? Voluptate, possimus laborum qui, eveniet blanditiis, facilis provident explicabo excepturi eaque sint maxime omnis.</p>
+                <div class="flex flex-col gap-2 justify-between items-center">
+                    <div class="text-gray-600"><i class="fa-solid fa-comment-dots"></i> 7 comments</div>
+                    <a href="details.html" class="text-white flex gap-3 items-center justify-center text-center px-10 py-3 rounded-4xl bg-green-900 w-fit">Voir plus <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="col-span-1 text-center flex flex-col items-center justify-center gap-3">
+                <div class="relative">
+                    <img src="../Agritech_App_Ressources/Blog-img-9.jpg" alt="Image agriculteur" class="object-cover h-70 w-full rounded-t-lg">
+                    <div class="absolute bottom-0 left-4 bg-amber-300 p-4 rounded-full transform translate-y-10">
+                        <p class="text-4xl text-gray-600 text-center">29</p>
+                        <p class="text-gray-600">09/2019</p>
+                    </div>
+                </div>
+                <p class="font-bold text-green-900">Contre-Saison</p>
+                <h2 class="font-medium text-2xl">Cras dapibus</h2>
+                <p class="text-gray-600">Amir Amirou</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor neque, modi cum libero magni reprehenderit? Voluptate, possimus laborum qui, eveniet blanditiis, facilis provident explicabo excepturi eaque sint maxime omnis.</p>
+                <div class="flex flex-col gap-2 justify-between items-center">
+                    <div class="text-gray-600"><i class="fa-solid fa-comment-dots"></i> 7 comments</div>
+                    <a href="details.html" class="text-white flex gap-3 items-center justify-center text-center px-10 py-3 rounded-4xl bg-green-900 w-fit">Voir plus <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="col-span-1 text-center flex flex-col items-center justify-center gap-3">
+                <div class="relative">
+                    <img src="../Agritech_App_Ressources/Blog-img-4.jpg" alt="Image agriculteur" class="object-cover h-70 w-full rounded-t-lg">
+                    <div class="absolute bottom-0 left-4 bg-amber-300 p-4 rounded-full transform translate-y-10">
+                        <p class="text-4xl text-gray-600 text-center">26</p>
+                        <p class="text-gray-600">07/2019</p>
+                    </div>
+                </div>
+                <p class="font-bold text-green-900">Jardinnage</p>
+                <h2 class="font-medium text-2xl">Lorem dolor</h2>
+                <p class="text-gray-600">Abdou Abdourahmane</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor neque, modi cum libero magni reprehenderit? Voluptate, possimus laborum qui, eveniet blanditiis, facilis provident explicabo excepturi eaque sint maxime omnis.</p>
+                <div class="flex flex-col gap-2 justify-between items-center">
+                    <div class="text-gray-600"><i class="fa-solid fa-comment-dots"></i> 7 comments</div>
+                    <a href="details.html" class="text-white flex gap-3 items-center justify-center text-center px-10 py-3 rounded-4xl bg-green-900 w-fit">Voir plus <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="col-span-1 text-center flex flex-col items-center justify-center gap-3">
+                <div class="relative">
+                    <img src="../Agritech_App_Ressources/Blog-img-10.jpg" alt="Image agriculteur" class="object-cover h-70 w-full rounded-t-lg">
+                    <div class="absolute bottom-0 left-4 bg-amber-300 p-4 rounded-full transform translate-y-10">
+                        <p class="text-4xl text-gray-600 text-center">29</p>
+                        <p class="text-gray-600">08/2015</p>
+                    </div>
+                </div>
+                <p class="font-bold text-green-900">Désertification</p>
+                <h2 class="font-medium text-2xl">Ultricies nec</h2>
+                <p class="text-gray-600">Leila Leilatou</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor neque, modi cum libero magni reprehenderit? Voluptate, possimus laborum qui, eveniet blanditiis, facilis provident explicabo excepturi eaque sint maxime omnis.</p>
+                <div class="flex flex-col gap-2 justify-between items-center">
+                    <div class="text-gray-600"><i class="fa-solid fa-comment-dots"></i> 7 comments</div>
+                    <a href="details.html" class="text-white flex gap-3 items-center justify-center text-center px-10 py-3 rounded-4xl bg-green-900 w-fit">Voir plus <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="col-span-1 text-center flex flex-col items-center justify-center gap-3">
+                <div class="relative">
+                    <img src="../Agritech_App_Ressources/Blog-img-2.jpg" alt="Image agriculteur" class="object-cover h-70 w-full rounded-t-lg">
+                    <div class="absolute bottom-0 left-4 bg-amber-300 p-4 rounded-full transform translate-y-10">
+                        <p class="text-4xl text-gray-600 text-center">02</p>
+                        <p class="text-gray-600">07/2015</p>
+                    </div>
+                </div>
+                <p class="font-bold text-green-900">Désertification</p>
+                <h2 class="font-medium text-2xl">Cras dapibus</h2>
+                <p class="text-gray-600">Leila Leilatou</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor neque, modi cum libero magni reprehenderit? Voluptate, possimus laborum qui, eveniet blanditiis, facilis provident explicabo excepturi eaque sint maxime omnis.</p>
+                <div class="flex flex-col gap-2 justify-between items-center">
+                    <div class="text-gray-600"><i class="fa-solid fa-comment-dots"></i> 7 comments</div>
+                    <a href="details.html" class="text-white flex gap-3 items-center justify-center text-center px-10 py-3 rounded-4xl bg-green-900 w-fit">Voir plus <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="col-span-1 text-center flex flex-col items-center justify-center gap-3">
+                <div class="relative">
+                    <img src="../Agritech_App_Ressources/Blog-img-3.jpg" alt="Image agriculteur" class="object-cover h-70 w-full rounded-t-lg">
+                    <div class="absolute bottom-0 left-4 bg-amber-300 p-4 rounded-full transform translate-y-10">
+                        <p class="text-4xl text-gray-600 text-center">19</p>
+                        <p class="text-gray-600">02/2015</p>
+                    </div>
+                </div>
+                <p class="font-bold text-green-900">Pépinières</p>
+                <h2 class="font-medium text-2xl">Lorem dolor</h2>
+                <p class="text-gray-600">Abdou Abdourahmane</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor neque, modi cum libero magni reprehenderit? Voluptate, possimus laborum qui, eveniet blanditiis, facilis provident explicabo excepturi eaque sint maxime omnis.</p>
+                <div class="flex flex-col gap-2 justify-between items-center">
+                    <div class="text-gray-600"><i class="fa-solid fa-comment-dots"></i> 7 comments</div>
+                    <a href="details.html" class="text-white flex gap-3 items-center justify-center text-center px-10 py-3 rounded-4xl bg-green-900 w-fit">Voir plus <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="col-span-1 text-center flex flex-col items-center justify-center gap-3">
+                <div class="relative">
+                    <img src="../Agritech_App_Ressources/Blog-img-7.jpg" alt="Image agriculteur" class="object-cover h-70 w-full rounded-t-lg">
+                    <div class="absolute bottom-0 left-4 bg-amber-300 p-4 rounded-full transform translate-y-10">
+                        <p class="text-4xl text-gray-600 text-center">16</p>
+                        <p class="text-gray-600">09/2014</p>
+                    </div>
+                </div>
+                <p class="font-bold text-green-900">Jardinnage</p>
+                <h2 class="font-medium text-2xl">Donec sodales</h2>
+                <p class="text-gray-600">Amir Amirou</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor neque, modi cum libero magni reprehenderit? Voluptate, possimus laborum qui, eveniet blanditiis, facilis provident explicabo excepturi eaque sint maxime omnis.</p>
+                <div class="flex flex-col gap-2 justify-between items-center">
+                    <div class="text-gray-600"><i class="fa-solid fa-comment-dots"></i> 7 comments</div>
+                    <a href="details.html" class="text-white flex gap-3 items-center justify-center text-center px-10 py-3 rounded-4xl bg-green-900 w-fit">Voir plus <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="col-span-1 text-center flex flex-col items-center justify-center gap-3">
+                <div class="relative">
+                    <img src="../Agritech_App_Ressources/Blog-img-8.jpg" alt="Image agriculteur" class="object-cover h-70 w-full rounded-t-lg">
+                    <div class="absolute bottom-0 left-4 bg-amber-300 p-4 rounded-full transform translate-y-10">
+                        <p class="text-4xl text-gray-600 text-center">21</p>
+                        <p class="text-gray-600">01/2014</p>
+                    </div>
+                </div>
+                <p class="font-bold text-green-900">Pépinières</p>
+                <h2 class="font-medium text-2xl">Cras dapibus</h2>
+                <p class="text-gray-600">Malika Malikatou</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor neque, modi cum libero magni reprehenderit? Voluptate, possimus laborum qui, eveniet blanditiis, facilis provident explicabo excepturi eaque sint maxime omnis.</p>
+                <div class="flex flex-col gap-2 justify-between items-center">
+                    <div class="text-gray-600"><i class="fa-solid fa-comment-dots"></i> 7 comments</div>
+                    <a href="details.html" class="text-white flex gap-3 items-center justify-center text-center px-10 py-3 rounded-4xl bg-green-900 w-fit">Voir plus <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="col-span-1 text-center flex flex-col items-center justify-center gap-3">
+                <div class="relative">
+                    <img src="../Agritech_App_Ressources/Blog-img-6.jpg" alt="Image agriculteur" class="object-cover h-70 w-full rounded-t-lg">
+                    <div class="absolute bottom-0 left-4 bg-amber-300 p-4 rounded-full transform translate-y-10">
+                        <p class="text-4xl text-gray-600 text-center">18</p>
+                        <p class="text-gray-600">03/2012</p>
+                    </div>
+                </div>
+                <p class="font-bold text-green-900">Désertification</p>
+                <h2 class="font-medium text-2xl">Cras dapibus</h2>
+                <p class="text-gray-600">Abdou Abdourahmane</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor neque, modi cum libero magni reprehenderit? Voluptate, possimus laborum qui, eveniet blanditiis, facilis provident explicabo excepturi eaque sint maxime omnis.</p>
+                <div class="flex flex-col gap-2 justify-between items-center">
+                    <div class="text-gray-600"><i class="fa-solid fa-comment-dots"></i> 7 comments</div>
+                    <a href="details.html" class="text-white flex gap-3 items-center justify-center text-center px-10 py-3 rounded-4xl bg-green-900 w-fit">Voir plus <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="col-span-1 text-center flex flex-col items-center justify-center gap-3">
+                <div class="relative">
+                    <img src="../Agritech_App_Ressources/Blog-img-5.jpg" alt="Image agriculteur" class="object-cover h-70 w-full rounded-t-lg">
+                    <div class="absolute bottom-0 left-4 bg-amber-300 p-4 rounded-full transform translate-y-10">
+                        <p class="text-4xl text-gray-600 text-center">25</p>
+                        <p class="text-gray-600">03/2011</p>
+                    </div>
+                </div>
+                <p class="font-bold text-green-900">Désertification</p>
+                <h2 class="font-medium text-2xl">Ultricies nec</h2>
+                <p class="text-gray-600">Amir Amirou</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor neque, modi cum libero magni reprehenderit? Voluptate, possimus laborum qui, eveniet blanditiis, facilis provident explicabo excepturi eaque sint maxime omnis.</p>
+                <div class="flex flex-col gap-2 justify-between items-center">
+                    <div class="text-gray-600"><i class="fa-solid fa-comment-dots"></i> 7 comments</div>
+                    <a href="details.html" class="text-white flex gap-3 items-center justify-center text-center px-10 py-3 rounded-4xl bg-green-900 w-fit">Voir plus <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
         </section>
     </main>
+
+    <!-- debut du footer -->
+    <footer class="shadow-[0_-10px_15px_-3px_rgba(0,0,0,0.1)]">
+        <form action="#">
+            <fieldset class="flex items-center justify-end gap-10 px-10 pt-6 max-md:border max-md:border-gray-200">
+                <h3 class="text-xl">Join Our Newsletter</h3>
+                <div class="flex items-center border border-gray-300 rounded-l-lg">
+                    <input type="email" placeholder="Enter your Email"
+                        class="outline-none px-3 pr-0 py-1 w-72 max-md:hidden" id="newsLetter">
+                    <label for="newsLetter"
+                        class="flex items-center justify-center h-8 bg-green-950 text-white p-2"><button type="submit"
+                            class="h-8">S'abonner</button></label>
+                </div>
+            </fieldset>
+        </form>
+        <nav class="grid grid-cols-4 gap-5 px-4 py-6 max-lg:grid-cols-2 max-md:grid-cols-1">
+            <section class="col-span-1 flex flex-col gap-2">
+                <div class="flex items-center gap-1">
+                    <img src="../Agritech_App_Ressources/favico.png" alt="Logo Agritech-App" class="size-15">
+                    <h2 class="text-3xl">Agritech App</h2>
+                </div>
+                <p>Organic farming avoids toxins, Farmers care for soil and grow crops that are safe, natural. Farmers
+                    care for soil</p>
+                <p>Suivez ous sur:</p>
+                <div class="flex items-center pl-2 gap-2"><i class="fa-brands text-[1.8rem] fa-x-twitter"></i><i
+                        class="fa-brands text-[1.8rem] fa-facebook"></i><i
+                        class="fa-brands text-[1.8rem] fa-linkedin"></i><i
+                        class="fa-brands text-[1.8rem] fa-instagram"></i><i
+                        class="fa-brands text-[1.8rem] fa-tiktok"></i>
+                </div>
+            </section>
+            <ul class="col-span-1 leading-7">
+                <div class="h-15 flex items-center">
+                    <h2 class="text-3xl">Liens Utiles</h2>
+                </div>
+                <li>>> Home</li>
+                <li>>> Formations</li>
+                <li>>> Météo</li>
+                <li>>> Indicateurs</li>
+            </ul>
+            <ul class="col-span-1 leading-7">
+                <div class="h-15 flex items-center">
+                    <h2 class="text-3xl">Nos Services</h2>
+                </div>
+                <li>>> Home</li>
+                <li>>> Formations</li>
+                <li>>> Météo</li>
+                <li>>> Indicateurs</li>
+            </ul>
+            <section class="col-span-1 flex flex-col gap-2">
+                <div class="flex items-center gap-1 h-15">
+                    <h2 class="text-3xl">Contactez Nous</h2>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <i class="fa-solid text-3xl fa-phone "></i>
+                    <div>
+                        <p class="text-gray-400">Phone:</p>
+                        <p>(00227) 99 98 97 96</p>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <i class="fa-solid text-3xl fa-location-dot "></i>
+                    <div>
+                        <p class="text-gray-400">Location:</p>
+                        <p>Niamey Niger</p>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <i class="fa-solid text-3xl fa-envelope "></i>
+                    <div>
+                        <p class="text-gray-400">Email:</p>
+                        <p>support@agritech.com</p>
+                    </div>
+                </div>
+
+            </section>
+        </nav>
+        <section class="p-7 bg-green-950">
+            <p class="text-2xl text-white">© 2025 Codeloccol, All Rights Reserved</p>
+        </section>
+    </footer>
 </body>
 </html>
