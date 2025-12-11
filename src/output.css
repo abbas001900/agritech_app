@@ -880,6 +880,12 @@
   .bg-\[url\(Agritech_App_Ressources\/Home\.jpg\)\] {
     background-image: url(Agritech_App_Ressources/Home.jpg);
   }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
+  }
   .object-cover {
     object-fit: cover;
   }
