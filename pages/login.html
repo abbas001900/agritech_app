@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call_made" />
+    <link href="../src/output.css" rel="stylesheet">
+    <title>Connexion</title>
+</head>
+<body class="min-h-100vh bg-amber-200">
+    <header class=" flex justify-center p-8">
+        <div class="flex items-center gap-1">
+            <img src="../Agritech_App_Ressources/favico.png" alt="Logo Agritech-App" class="size-25">
+            <h2 class="text-5xl text-gray-700">Agritech App</h2>
+        </div>
+    </header>
+    <main class="mx-4 flex justify-center">
+        <form action="../index.html" class="p-8 bg-green-950 text-white max-w-xl w-full rounded-md flex flex-col items-center gap-8">
+            <header class="text-3xl text-center w-full">Login</header>
+            <section class="w-full flex flex-col gap-5">
+                <fieldset class="flex flex-col gap-2">
+                    <label for="email">Veuillez saisir votre Email</label>
+                    <input id="email" type="email" placeholder="Email" class="p-2 text-gray-700 bg-white rounded-md">
+                </fieldset>
+                <fieldset class="flex flex-col gap-2">
+                    <label for="password">Veuillez saisir Mot de Passe</label>
+                    <input id="password" type="password" placeholder="password" class="p-2 text-gray-700 bg-white rounded-md">
+                </fieldset>
+                <fieldset class="flex gap-2">
+                    <input type="radio" id="remember">
+                    <label for="remember">Se souvenir de moi</label>
+                </fieldset>
+            </section>
+            <footer class="flex flex-col gap-4 w-full">
+                <button type="submit" class="text-white flex gap-1 py-4 px-8 rounded-4xl bg-green-600 self-end cursor-pointer hover:bg-green-800">Login <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFF">
+                        <path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z" class="group-hover:transform group-hover:-translate-y-30"/>
+                    </svg>
+                </button>
+                <p>Veuillez contactez un administrateur si vous avez oublié votre mot de passe</p>
+            </footer>
+        </form>
+    </main>
+</body>
+</html>
